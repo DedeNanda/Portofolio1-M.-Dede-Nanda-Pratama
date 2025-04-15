@@ -4,7 +4,7 @@
    Website portofolio kedua yang saya buat untuk memulai project menggunakan HTML, CSS (Tailwind), JAVASCRIPT dengan Jsdelivr, dan Boxicon.
   </p>
   <h2>Demo</h2>
-  ini link
+  https://portofolio1-m-dede-nanda-pratama.vercel.app/
   <h2>Cara Menjalankan Proyek</h2>
   <ol>
     <li>Clone repository ini:
