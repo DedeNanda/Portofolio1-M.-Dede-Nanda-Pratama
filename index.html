@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>M. Dede Nanda Pratama - Web Portofolio</title>
+
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon" />
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- style css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="bg-white/50 sticky top-0 z-50">
+      <!-- navbar desktop -->
+      <!-- hidden md:block digunakan untuk menampilkan navbar pada layar desktop -->
+      <div class="hidden md:block">
+        <div class="container flex mx-auto font-ubuntu p-1">
+          <div
+            class="w-1/2 flex items-center fade-left animated"
+            style="--i: 1"
+          >
+            <a href="#home" class="flex flex-row items-center gap-2">
+              <img
+                src="img/logo-porto.png"
+                alt="logo-porto"
+                class="w-12"
+                loading="lazy"
+              />
+              <p class="font-bold text-lg">M. Dede Nanda Pratama</p>
+            </a>
+          </div>
+          <div
+            class="w-1/2 flex justify-evenly gap-2 items-center text-black font-semibold text-lg fade-right animated"
+            style="--i: 2"
+          >
+            <a
+              href="#home"
+              class="after:block after:h-[2px] after:bg-blue-700 after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100 hover:text-purple-700"
+              >Home</a
+            >
+            <a
+              href="#aboutMe"
+              class="after:block after:h-[2px] after:bg-blue-700 after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100 hover:text-purple-700"
+              >About Me</a
+            >
+            <a
+              href="#project"
+              class="after:block after:h-[2px] after:bg-blue-700 after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100 hover:text-purple-700"
+              >Project</a
+            >
+            <a
+              href="#mySkill"
+              class="after:block after:h-[2px] after:bg-blue-700 after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100 hover:text-purple-700"
+              >My Skill</a
+            >
+            <a
+              href="#contact"
+              class="after:block after:h-[2px] after:bg-blue-700 after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100 hover:text-purple-700"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- navbar mobile -->
+      <div class="md:hidden">
+        <div class="container flex mx-auto font-ubuntu p-1">
+          <div
+            class="w-1/2 flex items-center fade-left animated"
+            style="--i: 1"
+          >
+            <a href="#home" class="flex flex-row items-center gap-2">
+              <img
+                src="img/logo-porto.png"
+                alt="logo-porto"
+                class="w-12"
+                loading="lazy"
+              />
+              <p class="font-bold text-lg">M. Dede Nanda Pratama</p>
+            </a>
+          </div>
+          <div
+            class="w-1/2 text-black flex justify-end items-center fade-right animated"
+            style="--i: 2"
+          >
+            <!-- menu btn -->
+            <button id="menu-btn" class="mr-2">
+              <box-icon name="menu" class="size-10"></box-icon>
+            </button>
+            <!-- menu close btn -->
+            <button id="close-btn" class="mr-2 hidden">
+              <box-icon name="x" class="size-10"></box-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- mobile menu -->
+      <div
+        id="mobile-menu"
+        class="absolute w-32 right-2 bg-white/50 shadow-lg border-b-2 border-r-2 border-l-2 border-white shadow-slate-500 hidden md:hidden rounded-b-full text-center space-y-3 py-4"
+      >
+        <a
+          href="#home"
+          class="block text-black font-medium hover:text-purple-700"
+          >Home</a
+        >
+        <a
+          href="#aboutMe"
+          class="block text-black font-medium hover:text-purple-700"
+          >About Me</a
+        >
+        <a
+          href="#project"
+          class="block text-black font-medium hover:text-purple-700"
+          >Project</a
+        >
+        <a
+          href="#mySkill"
+          class="block text-black font-medium hover:text-purple-700"
+          >My Skill</a
+        >
+
+        <a
+          href="#contact"
+          class="block text-black font-medium hover:text-purple-700"
+          >Contact</a
+        >
+      </div>
+    </nav>
+    <!-- end of navbar -->
+
+    <!-- Home -->
+    <section id="home" class="bg-slate-200/40 h-screen border-t-2">
+      <div
+        class="space-y-4 md:flex md:flex-col md:items-center md:justify-center"
+      >
+        <div
+          class="w-full h-full mt-6 flex flex-col justify-center items-center space-y-3"
+        >
+          <img
+            src="img/logo-porto.png"
+            class="w-64 h-64 fade-zoomIn animated"
+            style="--i: 3"
+            loading="lazy"
+          />
+          <div class="text-2xl font-bold">
+            <span
+              class="font-ubuntu bg-gradient-to-r from-blue-500 to-purple-500 text text-transparent bg-clip-text fade-zoomIn animated"
+              style="--i: 4"
+              id="text_title"
+            ></span>
+          </div>
+          <!-- list social media -->
+          <div
+            class="flex justify-center space-x-4 fade-zoomIn animated"
+            style="--i: 5"
+          >
+            <a href="https://www.instagram.com/dede_nandap" target="_blank"
+              ><box-icon
+                type="logo"
+                name="instagram-alt"
+                color="#140bec"
+                class="size-10 grayscale hover:grayscale-0"
+              ></box-icon
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/mdedenandapratama"
+              target="_blank"
+              ><box-icon
+                type="logo"
+                name="linkedin-square"
+                color="#140bec"
+                class="size-10 grayscale hover:grayscale-0"
+              ></box-icon>
+            </a>
+            <a href="https://github.com/DedeNanda" target="_blank"
+              ><box-icon
+                type="logo"
+                name="github"
+                color="#140bec"
+                class="size-10 grayscale hover:grayscale-0"
+              ></box-icon
+            ></a>
+          </div>
+        </div>
+
+        <div class="w-full md:w-2/5 fade-zoomIn animated" style="--i: 6">
+          <div
+            class="bg-slate-500/20 p-3 mx-4 text-lg font-semibold text-slate-700 rounded-lg border-2 shadow-lg shadow-slate-600"
+          >
+            I am a Junior Web Developer who is focusing on deepening Web
+            Technology Development. This website is an exploration for me to
+            showcase various projects, as well as documenting my journey in
+            improving my skills in the field of Web Developer.
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of Home -->
+
+    <!-- About Me -->
+    <!-- menggulangi style ke nomor 1 karena animasi timbul secara bergantian -->
+    <section id="aboutMe" class="bg-slate-200/40 h-screen-auto">
+      <div class="space-y-2 flex flex-col items-center justify-center">
+        <h1
+          class="font-ubuntu text-3xl font-bold fade-zoomIn animated"
+          style="--i: 1"
+        >
+          About Me
+        </h1>
+
+        <div class="w-full md:w-1/2 fade-zoomIn animated" style="--i: 2">
+          <div
+            class="bg-slate-500/20 p-3 mx-4 text-lg font-semibold text-slate-700 rounded-lg border-2 shadow-lg shadow-slate-600"
+          >
+            I am a Junior Web developer who has a great interest in building
+            innovative and user-friendly applications. Currently, I am
+            constantly learning new technologies and working on small projects
+            to develop skills in the field of Web Development. My journey in
+            coding has taught me about problem solving, patience, and
+            creativity, and I'm excited to bring fresh ideas and a passion for
+            learning to every project I work on. Currently , I'm building two
+            foundations Frontend and Backend with plans to learn new
+            technologies. I'm excited to collaborate, learn from experienced
+            developers, and contribute to projects that positively impact the
+            community and tech industry.
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of About Me -->
+
+    <!-- Project -->
+    <section id="project" class="bg-slate-200/40 h-screen-auto">
+      <h1
+        class="text-center font-ubuntu text-3xl font-bold p-4 fade-zoomIn animated"
+        style="--i: 1"
+      >
+        Project
+      </h1>
+      <div
+        class="mt-6 mx-4 flex flex-col sm:grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-3"
+      >
+        <div
+          class="bg-white border-2 border-slate-400/50 rounded-t-xl w-full h-full p-6 space-y-3 shadow-lg shadow-slate-700/50 fade-zoomIn animated"
+          style="--i: 2"
+        >
+          <div class="rounded-lg border-2 shadow-xl">
+            <img src="img/Project1.png" alt="" class="bg-cover h-full" />
+          </div>
+          <p class="text-xl font-bold text-justify text-slate-600">
+            PESIKABU WebApp
+          </p>
+          <p class="font-semibold text-lg text-slate-600">
+            BULLYING is a website dedicated to helping students combat and
+            prevent bullying in schools. We understand that bullying can
+            negatively impact students' physical, emotional, and academic
+            health. Therefore, PESIKABU is here to provide the necessary
+            solutions and support.
+          </p>
+          <p class="font-semibold text-lg text-slate-600/70">
+            Tech : Laravel 10 (PHP), Javascript, CSS, Bootstrap, Font Awesome.
+          </p>
+          <button
+            class="bg-blue-500 w-32 h-10 text-lg text-white font-bold rounded-lg hover:scale-110 duration-300"
+          >
+            <a
+              href="https://github.com/DedeNanda/PESIKABU-WebApp"
+              target="_blank"
+              >View Detail</a
+            >
+          </button>
+        </div>
+
+        <div
+          class="bg-white border-2 border-slate-400/50 rounded-t-xl w-full h-full p-6 space-y-3 shadow-lg shadow-slate-700/50 fade-zoomIn animated"
+          style="--i: 2"
+        >
+          <div class="rounded-lg border-2 shadow-xl">
+            <img src="img/4907151.jpg" alt="" class="bg-cover h-full" />
+          </div>
+          <p class="text-xl font-bold text-justify text-slate-600">
+            Coming Soon
+          </p>
+          <p class="font-semibold text-lg text-slate-600">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim,
+            explicabo. Facilis tempore minus aperiam perspiciatis beatae in
+            temporibus corrupti soluta repellat nulla, officiis sed, architecto
+            ab totam nam saepe porro.
+          </p>
+          <p class="font-semibold text-lg text-slate-600/70">Tech :</p>
+          <button
+            class="bg-blue-500 w-32 h-10 text-lg text-white font-bold rounded-lg hover:scale-110 duration-300"
+          >
+            <a href="#" target="_blank">View Detail</a>
+          </button>
+        </div>
+
+        <div
+          class="bg-white border-2 border-slate-400/50 rounded-t-xl w-full h-full p-6 space-y-3 shadow-lg shadow-slate-700/50 fade-zoomIn animated"
+          style="--i: 2"
+        >
+          <div class="rounded-lg border-2 shadow-xl">
+            <img src="img/4907151.jpg" alt="" class="bg-cover h-full" />
+          </div>
+          <p class="text-xl font-bold text-justify text-slate-600">
+            Coming Soon
+          </p>
+          <p class="font-semibold text-lg text-slate-600">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim,
+            explicabo. Facilis tempore minus aperiam perspiciatis beatae in
+            temporibus corrupti soluta repellat nulla, officiis sed, architecto
+            ab totam nam saepe porro.
+          </p>
+          <p class="font-semibold text-lg text-slate-600/70">Tech :</p>
+          <button
+            class="bg-blue-500 w-32 h-10 text-lg text-white font-bold rounded-lg hover:scale-110 duration-300"
+          >
+            <a href="#" target="_blank">View Detail</a>
+          </button>
+        </div>
+
+        <div
+          class="bg-white border-2 border-slate-400/50 rounded-t-xl w-full h-full p-6 space-y-3 shadow-lg shadow-slate-700/50 fade-zoomIn animated"
+          style="--i: 2"
+        >
+          <div class="rounded-lg border-2 shadow-xl">
+            <img src="img/4907151.jpg" alt="" class="bg-cover h-full" />
+          </div>
+          <p class="text-xl font-bold text-justify text-slate-600">
+            Coming Soon
+          </p>
+          <p class="font-semibold text-lg text-slate-600">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim,
+            explicabo. Facilis tempore minus aperiam perspiciatis beatae in
+            temporibus corrupti soluta repellat nulla, officiis sed, architecto
+            ab totam nam saepe porro.
+          </p>
+          <p class="font-semibold text-lg text-slate-600/70">Tech :</p>
+          <button
+            class="bg-blue-500 w-32 h-10 text-lg text-white font-bold rounded-lg hover:scale-110 duration-300"
+          >
+            <a href="#" target="_blank">View Detail</a>
+          </button>
+        </div>
+
+        <div
+          class="bg-white border-2 border-slate-400/50 rounded-t-xl w-full h-full p-6 space-y-3 shadow-lg shadow-slate-700/50 fade-zoomIn animated"
+          style="--i: 2"
+        >
+          <div class="rounded-lg border-2 shadow-xl">
+            <img src="img/4907151.jpg" alt="" class="bg-cover h-full" />
+          </div>
+          <p class="text-xl font-bold text-justify text-slate-600">
+            Coming Soon
+          </p>
+          <p class="font-semibold text-lg text-slate-600">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim,
+            explicabo. Facilis tempore minus aperiam perspiciatis beatae in
+            temporibus corrupti soluta repellat nulla, officiis sed, architecto
+            ab totam nam saepe porro.
+          </p>
+          <p class="font-semibold text-lg text-slate-600/70">Tech :</p>
+          <button
+            class="bg-blue-500 w-32 h-10 text-lg text-white font-bold rounded-lg hover:scale-110 duration-300"
+          >
+            <a href="#" target="_blank">View Detail</a>
+          </button>
+        </div>
+
+        <div
+          class="bg-white border-2 border-slate-400/50 rounded-t-xl w-full h-full p-6 space-y-3 shadow-lg shadow-slate-700/50 fade-zoomIn animated"
+          style="--i: 2"
+        >
+          <div class="rounded-lg border-2 shadow-xl">
+            <img src="img/4907151.jpg" alt="" class="bg-cover h-full" />
+          </div>
+          <p class="text-xl font-bold text-justify text-slate-600">
+            Coming Soon
+          </p>
+          <p class="font-semibold text-lg text-slate-600">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim,
+            explicabo. Facilis tempore minus aperiam perspiciatis beatae in
+            temporibus corrupti soluta repellat nulla, officiis sed, architecto
+            ab totam nam saepe porro.
+          </p>
+          <p class="font-semibold text-lg text-slate-600/70">Tech :</p>
+          <button
+            class="bg-blue-500 w-32 h-10 text-lg text-white font-bold rounded-lg hover:scale-110 duration-300"
+          >
+            <a href="#" target="_blank">View Detail</a>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- end of Project -->
+
+    <!-- my Skill -->
+    <section id="mySkill" class="bg-slate-200/40 h-screen-auto">
+      <h1
+        class="text-center font-ubuntu text-3xl font-bold p-4 fade-zoomIn animated"
+        style="--i: 1"
+      >
+        My Skill
+      </h1>
+      <div
+        class="w-full flex flex-col md:flex-row justify-center items-center gap-2 md:gap-4"
+      >
+        <box-icon
+          name="html5"
+          type="logo"
+          color="#ea4f07"
+          class="size-40 grayscale hover:grayscale-0 transition-all duration-300 fade-zoomIn animated"
+          style="--i: 2"
+        ></box-icon>
+        <box-icon
+          name="css3"
+          type="logo"
+          color="#51c3ea"
+          class="size-40 grayscale hover:grayscale-0 transition-all duration-300 fade-zoomIn animated"
+          style="--i: 2"
+        ></box-icon>
+        <box-icon
+          name="tailwind-css"
+          type="logo"
+          color="#21e2c6"
+          class="size-40 grayscale hover:grayscale-0 transition-all duration-300 fade-zoomIn animated"
+          style="--i: 2"
+        ></box-icon>
+        <box-icon
+          name="javascript"
+          type="logo"
+          color="#cfef07"
+          class="size-40 grayscale hover:grayscale-0 transition-all duration-300 fade-zoomIn animated"
+          style="--i: 2"
+        ></box-icon>
+        <box-icon
+          name="php"
+          type="logo"
+          color="#5a44d8"
+          class="size-40 grayscale hover:grayscale-0 transition-all duration-300 fade-zoomIn animated"
+          style="--i: 2"
+        ></box-icon>
+        <box-icon
+          name="git"
+          type="logo"
+          color="#ec0905"
+          class="size-40 grayscale hover:grayscale-0 transition-all duration-300 fade-zoomIn animated"
+          style="--i: 2"
+        ></box-icon>
+        <img
+          src="img/laravel-brands.svg"
+          alt=""
+          class="size-40 mt-7 md:ml-4 grayscale hover:grayscale-0 transition-all duration-300 fade-zoomIn animated"
+          style="--i: 2"
+        />
+      </div>
+    </section>
+    <!-- end of my Skill -->
+
+    <!-- Contact -->
+    <section id="contact" class="bg-slate-200/40 h-screen-auto">
+      <h1
+        class="text-center font-ubuntu text-3xl font-bold p-4 fade-zoomIn animated"
+        style="--i: 1"
+      >
+        Contact
+      </h1>
+
+      <div class="flex flex-col items-center space-y-6">
+        <h1
+          class="text-slate-500 text-xl md:text-2xl text-center font-semibold fade-zoomIn animated"
+          style="--i: 2"
+        >
+          Let's get acquainted and work together on projects!
+        </h1>
+        <button
+          class="w-40 bg-gradient-to-r from-blue-500 to-purple-500 p-2 rounded-lg fade-zoomIn animated"
+          style="--i: 2"
+        >
+          <a
+            href="https://wa.me/+6283172489282"
+            target="_blank"
+            class="text-white text-xl font-bold"
+            >Contact Me</a
+          >
+        </button>
+        <div class="space-x-4 fade-zoomIn animated" style="--i: 2">
+          <a href="mailto:mdedenandapratama@gmail.com" target="_blank"
+            ><box-icon
+              type="solid"
+              name="envelope"
+              color="#140bec"
+              class="size-10 grayscale hover:grayscale-0"
+            ></box-icon
+          ></a>
+          <a href="https://www.instagram.com/dede_nandap" target="_blank"
+            ><box-icon
+              type="logo"
+              name="instagram-alt"
+              color="#140bec"
+              class="size-10 grayscale hover:grayscale-0"
+            ></box-icon
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/mdedenandapratama"
+            target="_blank"
+            ><box-icon
+              type="logo"
+              name="linkedin-square"
+              color="#140bec"
+              class="size-10 grayscale hover:grayscale-0"
+            ></box-icon>
+          </a>
+          <a href="https://github.com/DedeNanda" target="_blank"
+            ><box-icon
+              type="logo"
+              name="github"
+              color="#140bec"
+              class="size-10 grayscale hover:grayscale-0"
+            ></box-icon
+          ></a>
+        </div>
+      </div>
+    </section>
+    <!-- end ofContact -->
+
+    <!-- footer -->
+    <footer
+      class="bg-gradient-to-r from-blue-500 to-purple-500 w-full h-16 flex justify-center items-center"
+    >
+      <p class="text-black font-semibold text-lg text-center">
+        © M. Dede Nanda Pratama 2025. All rights reserved.
+      </p>
+    </footer>
+    <!-- end of footer -->
+
+    <!-- script js -->
+    <script src="script.js"></script>
+
+    <!-- script box icon -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <!-- script typed -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  </body>
+</html>
