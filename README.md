@@ -5,7 +5,7 @@
   </p>
   <h2>Demo</h2>
   https://portofolio1-m-dede-nanda-pratama.vercel.app/
-  <h2>Cara Menjalankan Proyek</h2>
+  <h2>How to run the Project</h2>
   <ol>
     <li>Clone repository ini:
       <pre><code>git clone https://github.com/DedeNanda/Portofolio1-M.-Dede-Nanda-Pratama.git </code></pre>
