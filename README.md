@@ -1,11 +1,11 @@
 <h1 align="center">M. Dede Nanda Pratama Portfolio Website</h1>
   <h2>Deskripsi</h2>
   <p>
-   Website portofolio kedua yang saya buat untuk memulai project menggunakan HTML, CSS (Tailwind), JAVASCRIPT dengan Jsdelivr, dan Boxicon.
+   The second portfolio website I created to start the project uses HTML, CSS (Tailwind), JAVASCRIPT with Jsdelivr, and Boxicon.
   </p>
   <h2>Demo</h2>
   https://portofolio1-m-dede-nanda-pratama.vercel.app/
-  <h2>Cara Menjalankan Proyek</h2>
+  <h2>How to run the Project</h2>
   <ol>
     <li>Clone repository ini:
       <pre><code>git clone https://github.com/DedeNanda/Portofolio1-M.-Dede-Nanda-Pratama.git </code></pre>
